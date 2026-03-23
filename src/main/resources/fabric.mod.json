@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "chronicler",
+	"version": "${version}",
+	"name": "chronicler",
+	"description": "Custom Mod made for the NovelMedia short film 'The Chronicler & The Prophet.' Includes basic utility functions and custom assets.",
+	"authors": [
+		"NovelMedia"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/chronicler/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.novelmedia.chronicler.Chronicler"
+		],
+		"fabric-datagen": [
+			"net.novelmedia.chronicler.ChroniclerDataGenerator"
+		],
+		"client": [
+			"net.novelmedia.chronicler.ChroniclerClient"
+		]
+	},
+	"mixins": [
+		"chronicler.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
