@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "chronicler:block/pale_sandstone_bottom",
+    "side": "chronicler:block/pale_sandstone",
+    "top": "chronicler:block/pale_sandstone_top"
+  }
+}
