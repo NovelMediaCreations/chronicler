@@ -14,21 +14,16 @@ import net.minecraft.util.Identifier;
 import net.novelmedia.chronicler.Chronicler;
 
 public class ModBlocks {
-    public static final Block PALE_SAND = registerBlock("pale_sand",
-            AbstractBlock.Settings.create()
-                    .strength(2f)
-                    .sounds(BlockSoundGroup.SAND)
-            );
-    public static final Block PALE_SANDSTONE = registerBlock("pale_sandstone",
-            AbstractBlock.Settings.create()
-                    .strength(2f)
-                    .sounds(BlockSoundGroup.STONE)
-    );
-    public static final Block PALE_DIRT = registerBlock("pale_dirt",
-            AbstractBlock.Settings.create()
-                    .strength(2f)
-                    .sounds(BlockSoundGroup.GRASS)
-    );
+    public static final Block PALE_SAND = registerBlock("pale_sand", AbstractBlock.Settings.create()
+            .strength(1f)
+            .sounds(BlockSoundGroup.SAND));
+    public static final Block PALE_SANDSTONE = registerBlock("pale_sandstone", AbstractBlock.Settings.create()
+            .strength(4f)
+            .requiresTool()
+            .sounds(BlockSoundGroup.STONE));
+    public static final Block PALE_DIRT = registerBlock("pale_dirt", AbstractBlock.Settings.create()
+            .strength(1f)
+            .sounds(BlockSoundGroup.GRASS));
 
     private static Block registerBlock(String name, AbstractBlock.Settings settings) {
         Identifier id = Identifier.of(Chronicler.MOD_ID, name);
